@@ -1,1 +1,128 @@
+//================================================================
+void main() {
+
+// // penamaan variabel menggunakan camelcase
+
+//   String firstName = "pratikum";
+//   var lasName = "PPB";
+//   final cuaca = "cerah";
+
+//================================================================
+
+// IF ELSE STATEMENT
+//   var open = 8;
+//   var close = 17;
+//   var now = 10;
+
+//   if (now > open && now < close) {
+//     print ("toko buka");
+//   } else if (now == 12) {
+//     print("toko sedang istirahat");
+//   } 
+//   else {
+//     print ("yoko tutup");
+//   }
+
+// // condition ? true : false
+   // var toko = now > open ? "toko buka": "toko tutup";
+   // print(toko);
+
+//================================================================
+
+//  //Switch Case
+//   var day = 'b';
+
+//   switch (day) {
+//     case 'a':
+//      print('Nilai Sangat Bagus');
+//      break;
+//     case 'n':
+//      print ("Nilai Bagus");
+//     case  'c':
+//     print('Nilai Cukup');
+//     break;
+//   default:
+//     print("Nilai Tidak Tersedia");
+ 
+//   }
+ 
+}
+//=================================================================
+
+// Looping
+  // void main() {
+//   for (int i = 0; i <= 10; i++) {
+//     print(i);
+//   }
+// }
+
+// void main() {
+//  int i = 1; // Inisialisasi variabel
+//  // While loop untuk mencetak angka 1 sampai 5
+//  while (i <= 5) {
+//  print('Angka: $i');
+//  i++; // Increment untuk menghindari loop tak berujung
+//  }
+// }
+
+//=================================================================
+
+// List
+// void main() {
+//  // Membuat fixed-length list dengan panjang 3
+// //  List<int> fixedList = List.filled(3, 0);  
+
+ 
+// //  // Mengubah elemen dalam list
+// //  fixedList[0] = 10;
+// //  fixedList[1] = 20;
+// //  fixedList[2] = 30;
+// //  print('Fixed Length List: $fixedList'); 
+
+// //  print('Fixed Length List: $fixedList'); // Output: [10, 20, 0, 0, 0]
+ 
+//  // Menambah atau menghapus elemen tidak diperbolehkan
+//  // fixedList.add(30); // Ini akan menimbulkan error
+//  // fixedList.removeAt(0); // Ini juga akan menimbulkan error
+// }
+// void main() {
+ 
+//  List<int> growableList = [];
+ 
+//  growableList.add(10);
+//  growableList.add(20);
+//  growableList.add(30);
+//  print(growableList);
+
+//  growableList.add(40);
+//  growableList.add(50);
+//  print(growableList);
+ 
+//  growableList.remove(20);
+
+//  print(growableList); 
+// }
+
+//=================================================================
+// FUNGSI
+// void cetakPesan(String pesan) {
+//  print(pesan);
+// }
+
+// int perkalian(int a, int b) {
+//  return a * b;
+// }
+
+
+// void main() {
+ 
+//  int hasil = perkalian(5, 4);
+//  print('Hasil perkkalian fungsi: $hasil');
+
+//  cetakPesan('Halo, Guys');
+// }
+
+//=================================================================
+
+
 
