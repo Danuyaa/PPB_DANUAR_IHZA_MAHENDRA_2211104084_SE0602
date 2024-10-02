@@ -156,3 +156,32 @@ void main() {
 
 ## 3. Output
 ![Screenshot 2024-10-02 211902](https://github.com/user-attachments/assets/2707e418-55f3-45f4-a4f0-36e9903897af)
+
+##
+## 3.Tugas Function
+
+# Penjelasan Kode Dart - Mengecek Bilangan Prima
+
+Kode ini ditulis dalam bahasa pemrograman **Dart** dan digunakan untuk mengecek apakah suatu bilangan merupakan bilangan prima atau bukan.
+
+## Penjelasan Fungsi
+
+### 1. Fungsi `isPrima(int number)`
+Fungsi ini bertugas untuk mengecek apakah sebuah bilangan adalah bilangan prima. 
+
+#### Alur Fungsi:
+- **Baris 3:** Bilangan kurang dari 2 secara langsung dianggap bukan bilangan prima karena bilangan prima adalah bilangan bulat lebih besar dari 1.
+- **Baris 7-11:** Fungsi melakukan perulangan mulai dari angka 2 hingga akar kuadrat dari `number` untuk mengecek apakah bilangan tersebut habis dibagi oleh bilangan lain (tidak ada sisa). 
+  - Jika `number` habis dibagi oleh angka mana pun dalam rentang ini, maka `number` bukan bilangan prima dan fungsi akan mengembalikan `false`.
+  - Jika tidak ditemukan pembagi selain 1 dan `number` itu sendiri, maka fungsi mengembalikan `true`, artinya bilangan tersebut adalah bilangan prima.
+
+### 2. Fungsi `main()`
+Fungsi utama ini adalah titik awal dari program.
+
+#### Alur Fungsi:
+- **Baris 14:** Program akan meminta pengguna untuk memasukkan sebuah bilangan bulat.
+- **Baris 15:** Input dari pengguna diambil menggunakan `stdin.readLineSync()` dan diubah menjadi tipe data `int`.
+- **Baris 18:** Program akan memanggil fungsi `isPrima` untuk mengecek apakah bilangan yang diinput adalah bilangan prima.
+- **Baris 19-22:** Berdasarkan hasil dari fungsi `isPrima`, program akan mencetak apakah bilangan tersebut adalah bilangan prima atau bukan.
+
+## Contoh Output:
