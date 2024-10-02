@@ -8,18 +8,30 @@ Program ini merupakan contoh sederhana untuk menampilkan data dengan tipe `Strin
 ## Struktur Program
 
 ```dart
-void main() {
-  var name = "yanto";
-  var age = "22";
-  print("name: \$name, usia: \$age");
+import 'dart:io';
 
-  String firstName, lastName; // Tipe data String
-  firstName = "nopal";
-  lastName = "ananta";
-  final cuaca = "Cerah";
-
-  print("nama: \$firstName, \$lastName" );
+String evaluasiNilai(int nilai) {
+  if (nilai > 70) {
+    return "Nilai A";
+  } else if (nilai > 40 && nilai <= 70) {
+    return "Nilai B";
+  } else if (nilai > 0 && nilai <= 40) {
+    return "Nilai C";
+  } else {
+    return ""; // Teks kosong jika tidak memenuhi kondisi
+  }
 }
+
+void main() {
+  // Minta input dari pengguna
+  print('Masukkan nilai: ');
+  int nilai = int.parse(stdin.readLineSync()!);
+
+  // Evaluasi nilai dan tampilkan hasilnya
+  String hasil = evaluasiNilai(nilai);
+    print('$nilai merupakan $hasil');
+}
+
 ```
 
 ### Penjelasan:
