@@ -29,34 +29,66 @@ void main() {
 
 ### Penjelasan:
 
-1. **Deklarasi Variabel:**
-   - `var name = "yanto";` mendeklarasikan variabel `name` dengan tipe data `String` secara implisit. Nilai yang diberikan adalah `"yanto"`.
-   - `var age = "22";` mendeklarasikan variabel `age` dengan nilai `"22"`. Karena menggunakan `var`, Dart secara otomatis mengenali tipe data dari nilai yang diberikan.
-   
-2. **Penggunaan `print` dengan Interpolasi:**
-   - Pada baris `print("name: \$name, usia: \$age");`, kita menggunakan interpolasi string untuk memasukkan nilai variabel `name` dan `age` ke dalam teks yang dicetak. Karakter `\$` digunakan untuk menyisipkan nilai variabel ke dalam string.
-   
-3. **Deklarasi Tipe Data Eksplisit:**
-   - `String firstName, lastName;` mendeklarasikan dua variabel bertipe `String`, yaitu `firstName` dan `lastName`. Nilai mereka diinisialisasi secara eksplisit setelah deklarasi.
-   - `firstName = "nopal";` dan `lastName = "ananta";` mengisi variabel tersebut dengan nilai masing-masing.
+## 1. Import Paket
+```dart
+import 'dart:io';
+```
+Kode ini mengimpor paket `dart:io` untuk memungkinkan operasi input dan output, seperti membaca input dari pengguna melalui terminal.
 
-4. **Penggunaan `final`:**
-   - `final cuaca = "Cerah";` mendeklarasikan variabel `cuaca` sebagai `final`, artinya nilainya tidak dapat diubah setelah inisialisasi. Ini digunakan untuk nilai yang hanya diatur satu kali.
+## 2. Fungsi `evaluasiNilai`
+Fungsi ini digunakan untuk mengevaluasi nilai berdasarkan beberapa kondisi.
 
-5. **Cetak Nama dengan Interpolasi:**
-   - Baris `print("nama: \$firstName, \$lastName");` mencetak nilai variabel `firstName` dan `lastName` dengan interpolasi string.
+```dart
+String evaluasiNilai(int nilai) {
+  if (nilai > 70) {
+    return "Nilai A";
+  } else if (nilai > 40 && nilai <= 70) {
+    return "Nilai B";
+  } else if (nilai > 0 && nilai <= 40) {
+    return "Nilai C";
+  } else {
+    return ""; // Teks kosong jika tidak memenuhi kondisi
+  }
+}
+```
 
-Program ini mengilustrasikan cara mendeklarasikan dan menggunakan variabel, tipe data, serta mencetak nilai menggunakan interpolasi string di Dart.
+- Parameter: `int nilai` - nilai yang akan dievaluasi.
+- Fungsi ini mengevaluasi nilai dalam beberapa kondisi:
+  - Jika nilai lebih besar dari 70, akan mengembalikan **"Nilai A"**.
+  - Jika nilai lebih besar dari 40 dan kurang dari atau sama dengan 70, akan mengembalikan **"Nilai B"**.
+  - Jika nilai lebih besar dari 0 dan kurang dari atau sama dengan 40, akan mengembalikan **"Nilai C"**.
+  - Jika nilai tidak memenuhi syarat di atas, akan mengembalikan string kosong.
 
+## 3. Fungsi `main()`
+Fungsi utama ini adalah titik awal eksekusi program.
 
-### Output
-![opvariable](https://github.com/user-attachments/assets/ab26e454-ed62-413a-ac38-84c71f559899)
+```dart
+void main() {
+  // Minta input dari pengguna
+  print('Masukkan nilai: ');
+  int nilai = int.parse(stdin.readLineSync()!);
 
-# B. Statement Control
- 
-# Penjelasan Program Dart dengan Statement Control
+  // Evaluasi nilai dan tampilkan hasilnya
+  String hasil = evaluasiNilai(nilai);
+  print('\$nilai merupakan \$hasil');
+}
+```
 
-Program ini menampilkan penggunaan statement control `if-else`, `conditional expressions`, dan `switch-case` untuk mengontrol alur eksekusi berdasarkan kondisi.
+- Program akan meminta pengguna untuk memasukkan nilai melalui terminal dengan `print('Masukkan nilai: ')`.
+- Input nilai akan dibaca menggunakan `stdin.readLineSync()` dan dikonversi menjadi tipe data `int` menggunakan `int.parse()`.
+- Fungsi `evaluasiNilai()` kemudian dipanggil dengan nilai yang diberikan untuk menentukan kategori nilai.
+- Hasil dari evaluasi akan ditampilkan kembali di terminal dengan format "\$nilai merupakan \$hasil".
+
+## 4. Output
+Contoh eksekusi program:
+```
+Masukkan nilai: 85
+85 merupakan Nilai A
+```
+
+## 5. Penjelasan Tambahan
+- **Kondisi If-Else:** Digunakan untuk membandingkan nilai yang diberikan dan mengembalikan hasil yang sesuai.
+- **Penggunaan Paket `dart:io`:** Diperlukan untuk mengakses fungsi `stdin.readLineSync()` agar bisa membaca input dari terminal.
 
 ## Struktur Program
 
