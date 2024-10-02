@@ -1,4 +1,4 @@
-## Tugas Percabangan (Branching )
+## 1. Tugas Percabangan (Branching )
 
 ```dart
 import 'dart:io';
@@ -80,13 +80,10 @@ void main() {
 - Hasil dari evaluasi akan ditampilkan kembali di terminal dengan format "\$nilai merupakan \$hasil".
 
 ## 4. Output
-Contoh eksekusi program:
-```
-Masukkan nilai: 85
-85 merupakan Nilai A
-```
+![Screenshot 2024-10-02 211805](https://github.com/user-attachments/assets/847a17ed-74eb-453a-943c-4e3f9329338c)
+
 ##
-## Tugas Looping (Perulangan)
+## 2.Tugas Looping (Perulangan)
 
 ```dart
 void main() {
@@ -158,36 +155,4 @@ void main() {
 - Setelah mencetak bintang pada satu baris, program pindah ke baris berikutnya dengan `print('')`.
 
 ## 3. Output
-Contoh output program ketika pengguna memasukkan tinggi piramida 5:
-
-```
-Masukkan tinggi piramida: 5
-    *
-   ***
-  *****
- *******
-*********
-```(https://github.com/user-attachments/assets/844abef8-21b9-4f6d-9ed9-3672a3b57d32)
-
-# C. Looping
-
-# Penjelasan Program Dart dengan Perulangan (Looping)
-
-Program ini mendemonstrasikan penggunaan dua jenis perulangan di Dart: `for` loop dan `while` loop.
-
-## Struktur Program
-
-```dart
-void main() {
-  for (int i = 1; i <= 10; i++) {
-    print(i);
-  } // End for
-
-  int i = 1;
-
-  while (i <= 5) {
-    print('Angka: \$i');
-    i++;
-  }
-} // End main
-```
+![Screenshot 2024-10-02 211902](https://github.com/user-attachments/assets/2707e418-55f3-45f4-a4f0-36e9903897af)
