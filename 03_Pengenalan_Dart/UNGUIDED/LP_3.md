@@ -85,76 +85,89 @@ Contoh eksekusi program:
 Masukkan nilai: 85
 85 merupakan Nilai A
 ```
-
-## 5. Penjelasan Tambahan
-- **Kondisi If-Else:** Digunakan untuk membandingkan nilai yang diberikan dan mengembalikan hasil yang sesuai.
-- **Penggunaan Paket `dart:io`:** Diperlukan untuk mengakses fungsi `stdin.readLineSync()` agar bisa membaca input dari terminal.
-
-## Struktur Program
+##
+## Tugas Looping (Perulangan)
 
 ```dart
 void main() {
-  // Statement Control
-  // if else
-  var open = 8;
-  var close = 17;
-  var now = 13;
+  // Minta input dari pengguna
+  print('Masukkan tinggi piramida: ');
+  int tinggi = int.parse(stdin.readLineSync()!);
 
-  if (now >= open && now <= close) {
-    print("Open now!");
-  } else if (now == 13) {
-    print("istirahat sholat jumat");
-  } else {
-    print("Sorry, we're closed.");
-  } // End if
-
-  // condition ? true : false
-  var toko = now > open ? 'Toko buka' : 'Toko tutup';
-  print(toko);
-
-  var nilai = 'b';
-
-  // switch case
-  switch (nilai) {
-    case 'a':
-      print('Nilai yang sangat bagus');
-      break;
-    case 'b':
-      print('Nilai jelek');
-      break;
-    case 'c':
-      print('Nilai sangat jelek');
-      break;
-    default:
-      print('Nilai default');
+  // Menggambar piramida
+  for (int i = 1; i <= tinggi; i++) {
+    // Mencetak spasi untuk memusatkan piramida
+    for (int j = 1; j <= tinggi - i; j++) {
+      stdout.write(' ');
+    }
+    // Mencetak bintang
+    for (int k = 1; k <= (2 * i - 1); k++) {
+      stdout.write('*');
+    }
+    // Pindah ke baris berikutnya
+    print('');
   }
 }
 ```
 
 ### Penjelasan:
 
-1. **Penggunaan `if-else`:**
-   - Program memeriksa waktu saat ini (`now`) untuk menentukan apakah toko sedang buka atau tutup. 
-   - Jika kondisi `now >= open && now <= close` terpenuhi, akan mencetak `"Open now!"`.
-   - Jika waktu saat ini adalah jam 13, program akan mencetak `"istirahat sholat jumat"`. 
-   - Jika kedua kondisi tidak terpenuhi, akan mencetak `"Sorry, we're closed."`.
+## 1. Fungsi `main()`
+Fungsi utama yang mengeksekusi program.
 
-2. **Conditional Expression (Ternary Operator):**
-   - Ekspresi kondisional digunakan untuk menentukan status toko dalam satu baris.
-   - Baris `var toko = now > open ? 'Toko buka' : 'Toko tutup';` akan memeriksa apakah `now` lebih besar dari `open`. Jika ya, akan menghasilkan `'Toko buka'`, jika tidak, akan menghasilkan `'Toko tutup'`.
+```dart
+void main() {
+  // Minta input dari pengguna
+  print('Masukkan tinggi piramida: ');
+  int tinggi = int.parse(stdin.readLineSync()!);
+```
+- Program meminta pengguna untuk memasukkan tinggi piramida. Input ini diambil menggunakan `stdin.readLineSync()` dan dikonversi menjadi tipe `int` menggunakan `int.parse()`.
+- **Tinggi piramida** yang dimasukkan menentukan jumlah baris bintang yang akan ditampilkan.
 
-3. **Penggunaan `switch-case`:**
-   - `switch` digunakan untuk memeriksa nilai variabel `nilai` dan mencetak pesan berdasarkan nilai tersebut.
-   - Jika `nilai` adalah `'a'`, mencetak `'Nilai yang sangat bagus'`.
-   - Jika `nilai` adalah `'b'`, mencetak `'Nilai jelek'`.
-   - Jika `nilai` adalah `'c'`, mencetak `'Nilai sangat jelek'`.
-   - `default` menangani kasus di mana nilai `nilai` tidak sesuai dengan kasus yang didefinisikan, dan akan mencetak `'Nilai default'`.
+## 2. Menggambar Piramida
+```dart
+  // Menggambar piramida
+  for (int i = 1; i <= tinggi; i++) {
+    // Mencetak spasi untuk memusatkan piramida
+    for (int j = 1; j <= tinggi - i; j++) {
+      stdout.write(' ');
+    }
+    // Mencetak bintang
+    for (int k = 1; k <= (2 * i - 1); k++) {
+      stdout.write('*');
+    }
+    // Pindah ke baris berikutnya
+    print('');
+  }
+}
+```
 
-Program ini memperlihatkan penggunaan kontrol alur program dengan `if-else`, conditional expressions (ternary operator), dan `switch-case` dalam Dart.
+### a. Loop Pertama (Baris Piramida)
+- `for (int i = 1; i <= tinggi; i++)`: Loop ini digunakan untuk mengatur jumlah baris piramida sesuai dengan tinggi yang diberikan.
+  - `i` mewakili nomor baris saat ini.
 
+### b. Loop Kedua (Spasi)
+- `for (int j = 1; j <= tinggi - i; j++)`: Loop ini mencetak spasi untuk memusatkan piramida. Semakin ke bawah, semakin sedikit spasi yang dicetak karena piramida melebar.
+  - Jumlah spasi yang dicetak adalah `tinggi - i`.
 
- ### Output
-![hasilStatement_Control](https://github.com/user-attachments/assets/844abef8-21b9-4f6d-9ed9-3672a3b57d32)
+### c. Loop Ketiga (Bintang)
+- `for (int k = 1; k <= (2 * i - 1); k++)`: Loop ini mencetak bintang pada setiap baris. Jumlah bintang yang dicetak adalah `(2 * i - 1)`, sehingga pada baris pertama hanya 1 bintang, baris kedua 3 bintang, dan seterusnya.
+  - Pola bintang mengikuti urutan ganjil (1, 3, 5, 7, dst.).
+
+### d. Pindah Baris
+- Setelah mencetak bintang pada satu baris, program pindah ke baris berikutnya dengan `print('')`.
+
+## 3. Output
+Contoh output program ketika pengguna memasukkan tinggi piramida 5:
+
+```
+Masukkan tinggi piramida: 5
+    *
+   ***
+  *****
+ *******
+*********
+```(https://github.com/user-attachments/assets/844abef8-21b9-4f6d-9ed9-3672a3b57d32)
 
 # C. Looping
 
@@ -178,125 +191,3 @@ void main() {
   }
 } // End main
 ```
-
-### Penjelasan:
-
-1. **Perulangan `for`:**
-   - `for (int i = 1; i <= 10; i++)` adalah perulangan yang akan dieksekusi 10 kali, dari `i = 1` hingga `i = 10`.
-   - Pada setiap iterasi, nilai `i` akan ditampilkan dengan menggunakan `print(i)`.
-   - Ekspresi `i++` meningkatkan nilai `i` sebanyak 1 setelah setiap iterasi, sehingga loop akan berhenti ketika `i > 10`.
-
-2. **Perulangan `while`:**
-   - Perulangan `while` akan terus berjalan selama kondisi yang diberikan bernilai `true`.
-   - Dalam hal ini, `while (i <= 5)` akan mencetak nilai `i` selama `i` masih kurang dari atau sama dengan 5.
-   - Setelah setiap iterasi, nilai `i` akan ditambah 1 (`i++`) untuk memastikan loop tidak berjalan tanpa henti.
-   
-   Perulangan berhenti saat nilai `i` melebihi 5.
-
-Program ini menunjukkan bagaimana melakukan perulangan di Dart menggunakan dua mekanisme perulangan yang berbeda: `for` dan `while` loop.
-
- ### Output
- ![hasilloop](https://github.com/user-attachments/assets/fbd21cfc-89c2-49e9-a53c-51996c2be287)
-
-# D. List
-## Penjelasan Kode
-
-### List dengan Panjang Tetap:
-```dart
-List<int> fixedList = List.filled(3, 0);
-```
-- Baris ini membuat list dengan panjang tetap, yaitu 3 elemen, dan setiap elemen diinisialisasi dengan nilai `0`.
-
-Elemen-elemen kemudian diperbarui dengan nilai tertentu:
-```dart
-fixedList[0] = 10;
-fixedList[1] = 20;
-fixedList[2] = 30;
-```
-- Elemen pada indeks 0, 1, dan 2 diisi dengan nilai 10, 20, dan 30.
-
-Setelah elemen-elemen tersebut diubah, berikut hasilnya:
-```dart
-print('Fixed Length List: \$fixedList');
-```
-Hasil keluaran:
-```
-Fixed Length List: [10, 20, 30]
-```
-
-### List yang Dapat Bertambah Panjang:
-```dart
-List<int> growableList = [];
-```
-- List ini dideklarasikan sebagai list kosong, dan ukurannya bisa bertambah sesuai kebutuhan.
-
-Kita dapat menambahkan elemen menggunakan metode `add()`:
-```dart
-growableList.add(10);
-growableList.add(20);
-growableList.add(30);
-```
-Setelah elemen-elemen tersebut ditambahkan, hasilnya:
-```
-Growable List setelah menambah elemen: [10, 20, 30]
-```
-
-### Menambah Elemen Lagi:
-```dart
-growableList.add(40);
-growableList.add(50);
-```
-List sekarang berisi:
-```
-[10, 20, 30, 40, 50]
-```
-
-### Menghapus Elemen:
-```dart
-growableList.remove(20);
-```
-Kode ini menghapus nilai `20` dari list, dan list menjadi seperti ini:
-```
-Growable List setelah menghapus elemen: [10, 30, 40, 50]
-```
-
-
- ### Output
- ![hasillist](https://github.com/user-attachments/assets/b06fdd45-9316-4912-9ce5-2252050c1585)
-
- # E. Fungsi
- 
-# Penjelasan Kode
-
-Kode ini merupakan contoh dasar dalam bahasa pemrograman Dart yang menunjukkan cara membuat fungsi sederhana untuk mencetak pesan dan melakukan perkalian, serta memanggilnya di dalam fungsi utama (`main`).
-
-## Fungsi 1: cetakPesan
-```dart
-void cetakPesan(String pesan) {
-  print(pesan); 
-}
-```
-Fungsi ini bertipe `void` (tidak mengembalikan nilai) dan menerima satu parameter bertipe `String` bernama `pesan`. Fungsi ini akan mencetak nilai dari parameter tersebut menggunakan fungsi `print`.
-
-## Fungsi 2: perkalian
-```dart
-int perkalian(int a, int b) {
-  return a * b;
-}
-```
-Fungsi `perkalian` ini menerima dua parameter bertipe `int` (bilangan bulat) dan mengembalikan hasil perkalian dari kedua parameter tersebut. Nilai hasil perkalian dikembalikan melalui perintah `return`.
-
-## Fungsi 3: main
-```dart
-void main() {
-  int hasil = perkalian(5, 10);
-  print("Hasil perkalian: $hasil");
-
-  cetakPesan("Hello World");
-}
-```
-Fungsi `main` adalah titik masuk program. Dalam fungsi ini, pertama-tama kita memanggil fungsi `perkalian` dengan nilai `5` dan `10`, menyimpan hasilnya ke dalam variabel `hasil`, dan mencetak hasilnya dengan `print`. Setelah itu, fungsi `cetakPesan` dipanggil untuk mencetak pesan "Hello World".
-
-
-  ### Output
-  ![hasilfungsi](https://github.com/user-attachments/assets/d4ef1d2f-9099-412a-8665-352c182ddeff)
