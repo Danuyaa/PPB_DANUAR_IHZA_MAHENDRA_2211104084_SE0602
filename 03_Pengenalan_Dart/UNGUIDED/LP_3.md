@@ -79,7 +79,7 @@ void main() {
 - Fungsi `evaluasiNilai()` kemudian dipanggil dengan nilai yang diberikan untuk menentukan kategori nilai.
 - Hasil dari evaluasi akan ditampilkan kembali di terminal dengan format "\$nilai merupakan \$hasil".
 
-## 4. Output
+## Output
 ![Screenshot 2024-10-02 211805](https://github.com/user-attachments/assets/847a17ed-74eb-453a-943c-4e3f9329338c)
 
 ##
@@ -154,7 +154,7 @@ void main() {
 ### d. Pindah Baris
 - Setelah mencetak bintang pada satu baris, program pindah ke baris berikutnya dengan `print('')`.
 
-## 3. Output
+## Output
 ![Screenshot 2024-10-02 211902](https://github.com/user-attachments/assets/2707e418-55f3-45f4-a4f0-36e9903897af)
 
 ##
@@ -184,4 +184,5 @@ Fungsi utama ini adalah titik awal dari program.
 - **Baris 18:** Program akan memanggil fungsi `isPrima` untuk mengecek apakah bilangan yang diinput adalah bilangan prima.
 - **Baris 19-22:** Berdasarkan hasil dari fungsi `isPrima`, program akan mencetak apakah bilangan tersebut adalah bilangan prima atau bukan.
 
-## Contoh Output:
+## Output:
+![Screenshot 2024-10-02 213403](https://github.com/user-attachments/assets/e7ceddc9-b5ff-4421-a7ce-d8a9aebcd32f)
