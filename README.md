@@ -28,7 +28,7 @@ Repository ini berisi materi praktikum untuk mata kuliah **Pemrograman Perangkat
 
 1. **Clone repository** ini ke lokal Anda dengan perintah:
    ```bash
-   git clone https://github.com/irpanzy/PPB_Irfan_Muria_2211104075_SE0602.git
+   git clone https://github.com/Danuyaa/PPB_DANUAR_IHZA_MAHENDRA_2211104084_SE0602.git
    ```
 
 2. Buka folder sesuai modul yang ingin dipelajari.
@@ -76,9 +76,9 @@ Jika Anda tertarik untuk berkontribusi pada project ini, berikut adalah langkah-
 
 ## Sosial Media
 
-- GitHub [@irpanzy](https://github.com/irpanzy)
-- Twitter [@irpannzy](https://x.com/irpannzy)
-- Instagram [@irfanmuriaa](https://www.instagram.com/irfanmuriaa/)
+- GitHub 
+- Twitter
+- Instagram [@danuyaa]
 
 ---
 
