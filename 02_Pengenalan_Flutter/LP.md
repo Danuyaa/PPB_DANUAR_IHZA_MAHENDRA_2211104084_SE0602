@@ -2,7 +2,7 @@
 
 **LAPORAN PRAKTIKUM** <br>
 **PEMOGRAMAN PERANGKAT BERGERAK** <br>
-**MODUL 2** <br>
+**MODUL II** <br>
 
 <img src="https://github.com/user-attachments/assets/637271ab-0240-4561-a7a6-04cb1169f636" alt="Logo Vertikal Telkom University" width="350"/>
 
