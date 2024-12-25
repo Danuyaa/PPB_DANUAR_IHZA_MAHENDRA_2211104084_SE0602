@@ -217,7 +217,7 @@ class _MyNotificationScreenState extends State<MyNotificationScreen> {
 ```
 **FireBase Messaging**
 -
-![image](https://github.com/user-attachments/assets/ac95a3f8-f648-4e1b-8e0c-eada84aaf738)
+![Gambar WhatsApp 2024-12-25 pukul 19 35 05_4a9b675a](https://github.com/user-attachments/assets/de337d26-ce18-4d2d-9f1f-370575bace8c)
 ---
 
 
@@ -227,20 +227,16 @@ class _MyNotificationScreenState extends State<MyNotificationScreen> {
 
 ---
 
-![Screenshot 2024-11-27 164534](https://github.com/user-attachments/assets/e2304373-9cb0-48cf-883a-4bc0e4adcadc)
+![Gambar WhatsApp 2024-12-25 pukul 19 26 13_4843bf93](https://github.com/user-attachments/assets/f1370b54-e24f-4e1c-b45e-92ff8255c418)
 
 
----
-
-![Screenshot 2024-11-27 164608](https://github.com/user-attachments/assets/a4bc8602-e92f-40e6-90da-d693ce93592c)
-
-
----
 
 # UNGUIDED
 **Modifikasi Guided diatas bisa menampilkan Nama, Nim, Kelas, dan Prodi kalian ke dalam
 Notifikasi Flutter Cloud Messaging dan landing page notifikasinya.**
 
 **Output**
-![image](https://github.com/user-attachments/assets/0d86bf2f-fe0c-44fc-acde-e391ec156b75)
-![image](https://github.com/user-attachments/assets/1bd605b0-4c27-4f62-9e3b-845a9db81707)
+![Gambar WhatsApp 2024-12-25 pukul 19 35 24_a0107055](https://github.com/user-attachments/assets/b56a9955-25d2-4123-8ec3-852e620dcd63)
+
+![Gambar WhatsApp 2024-12-25 pukul 19 34 18_92613f00](https://github.com/user-attachments/assets/0160ad84-faf2-49c1-ae73-ff1899868215)
+
