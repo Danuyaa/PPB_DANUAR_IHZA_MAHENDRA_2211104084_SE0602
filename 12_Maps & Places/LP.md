@@ -1,6 +1,6 @@
 <div align="center">
 
-**TUGAS PENDAHULUAN** <br>
+**LAPORAN PRATIKUM** <br>
 **PEMOGRAMAN PERANGKAT BERGERAK** <br>
 **MODUL XII** <br>
 
