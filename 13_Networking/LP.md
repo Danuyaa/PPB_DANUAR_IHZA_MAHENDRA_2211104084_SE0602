@@ -439,7 +439,7 @@ class AddController extends GetxController {
 ---
 **Output**
 --
-![image](https://github.com/user-attachments/assets/d9d3ebb1-81d3-441c-96d4-01ab01305cd0)
-![image](https://github.com/user-attachments/assets/f4cb9eef-6255-4587-adb0-42d4987c7ef3)
-![image](https://github.com/user-attachments/assets/49d95bb9-1333-4127-a434-941661c7b4b8)
-![image](https://github.com/user-attachments/assets/c8654be7-d42a-4ede-8add-7bce4e3efac2)
+![image](https://github.com/user-attachments/assets/c24af36e-69b6-4136-925b-474be17b5465)
+![image](https://github.com/user-attachments/assets/3ccee7be-5bf7-45e2-9d9a-009b3fcbb282)
+![image](https://github.com/user-attachments/assets/0d6721ea-199e-4372-bf6d-bd18c7a36cea)
+![image](https://github.com/user-attachments/assets/43c6d5d6-5657-4ebd-bc3f-12b4483ca7cb)
