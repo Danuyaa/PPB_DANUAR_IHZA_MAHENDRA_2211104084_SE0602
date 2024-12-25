@@ -1,16 +1,12 @@
 <div align="center">
-  
-**LAPORAN PRAKTIKUM**  
-**PEMROGRAMAN PERANGKAT BERGERAK**
 
-**MODUL 13**  
-**NETWORKING**
+**LAPORAN PRATIKUM** <br>
+**PEMOGRAMAN PERANGKAT BERGERAK** <br>
+**MODUL XIII** <br>
 
-![logo tel-u](https://github.com/user-attachments/assets/3a44181d-9c92-47f6-8cf0-87755117fd99)
+<img src="https://github.com/user-attachments/assets/637271ab-0240-4561-a7a6-04cb1169f636" alt="Logo Vertikal Telkom University" width="350"/>
 
-Disusun Oleh :
-
-**IRFAN MURIA (2211104075)**  
+**DANUAR IHZA MAHENDRA (2211104084)**  
 **SE06-02**
 
 Asisten Praktikum :  
@@ -28,7 +24,6 @@ TELKOM UNIVERSITY PURWOKERTO
 </div>
 
 ---
-
 # GUIDED
 State management dalam Flutter adalah proses mengelola state atau status dari aplikasi, yaitu data atau informasi yang dapat berubah sepanjang siklus hidup aplikasi. State ini mencakup segala hal yang memengaruhi tampilan antarmuka pengguna (UI), seperti input pengguna, data dari API, dan status internal widget. Ketika aplikasi semakin kompleks dibuat, maka pasti akan ada saatnya dimana harus dibagikan state aplikasi ke berbagai halaman yang ada.  Flutter adalah deklaratif, sehingga Flutter membangun user interface berdasarkan state saat ini. Dengan menggunakan state management, dapat dilakukan sentralisasi semua state dari berbagai macam UI Control untuk mengendalikan aliran data lintas aplikasi. State management penting karena aplikasi Flutter sering kali terdiri dari banyak widget yang saling terkait. Dengan mengelola state dengan baik, kita dapat memastikan :  
 
@@ -221,10 +216,10 @@ class MyApp extends StatelessWidget {
 ---
 **Output**
 --
-![image](https://github.com/user-attachments/assets/c5ea001c-63a8-4faa-877f-bc59abb31993)
-![image](https://github.com/user-attachments/assets/71860a85-3a5e-4340-aeac-128e212de355)
-![image](https://github.com/user-attachments/assets/5f79e352-c11f-4a8d-b5ba-94c02d88c8d6)
-![image](https://github.com/user-attachments/assets/0cdb8add-c6f6-4fe1-9b54-c202f315f167)
+![image](https://github.com/user-attachments/assets/f52e431d-0982-4155-856b-c5570d80c47f)
+![image](https://github.com/user-attachments/assets/54b0373b-9267-40ae-835c-dfac44d3107f)
+![image](https://github.com/user-attachments/assets/afdaac3a-04d1-4c66-b83f-934344e1f2ef)
+![image](https://github.com/user-attachments/assets/b6a1c1ca-30a6-4a82-b5f5-cec56e654fb8)
 
 ---
 
