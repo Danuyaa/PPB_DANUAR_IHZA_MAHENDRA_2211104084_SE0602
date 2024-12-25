@@ -620,13 +620,13 @@ class HomeScreen extends StatelessWidget {
 
 ## Output
 ### GET
-![image](https://github.com/user-attachments/assets/0e77f21d-6c7f-4950-a1ff-9a828f3c6a05)
+![image](https://github.com/user-attachments/assets/4d760ff8-f0bf-4392-a88b-5d6e34e4b272)
 ### DELETE
-![image](https://github.com/user-attachments/assets/793d0fab-ee72-4e0a-9e5d-f4d230a7c195)
+![image](https://github.com/user-attachments/assets/070144da-007a-44f9-b4df-412df427f1cc)
 ### UPDATE
-![image](https://github.com/user-attachments/assets/be6a5fa0-9c02-47eb-8b5a-b5657a8120c4)
+![image](https://github.com/user-attachments/assets/f85b952d-e5b8-42c9-989b-201e860fe519)
 ### POST
-![image](https://github.com/user-attachments/assets/d28d00b3-130a-40cb-936b-d649e5611f8c)
+![image](https://github.com/user-attachments/assets/fe636a4b-221f-42bd-8f9f-f94ee4da1e78)
 
 # Deskripsi Program
 
