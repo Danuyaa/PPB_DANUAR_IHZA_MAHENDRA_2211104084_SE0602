@@ -287,17 +287,112 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ---
 # UNGUIDED
-
-## A. Tugas Mandiri
-Soal: Buatlah satu project untuk menampilkan beberapa produk dan halaman
-e-commerce dengan menerapkan class model serta navigasi halaman.
-
-**Input**
-
-- models/product.dart
+---
+Dari tugas guided yang telah dikerjakan, lanjutkan hingga ke bagian place picker untuk
+memberikan informasi mengenai lokasi yang ditunjuk di peta.
 ---
 
+homepage.dart
+```
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:place_picker_google/place_picker_google.dart';
+
+class MyMaps extends StatefulWidget {
+  @override
+  _MyMapsState createState() => _MyMapsState();
+}
+
+class _MyMapsState extends State<MyMaps> {
+  static final LatLng _kMapCenter = LatLng(-7.4350516, 109.2496451);
+  static final CameraPosition _kInitialPosition = CameraPosition(
+    target: _kMapCenter,
+    zoom: 11.0,
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Google Maps Demo'),
+      ),
+      body: Stack(
+        children: [
+          GoogleMap(
+            initialCameraPosition: _kInitialPosition,
+            myLocationEnabled: true,
+            onMapCreated: (GoogleMapController controller) {},
+          ),
+          Positioned(
+            bottom: 20,
+            left: 20,
+            right: 20,
+            child: ElevatedButton(
+              onPressed: () async {
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PlacePicker(
+                      apiKey:
+                          'AIzaSyBlXqXM8m1f5CGck5O85Z1LTt91YUUyf5I', 
+                      initialLocation: _kMapCenter,
+                    ),
+                  ),
+                );
+
+                if (result != null) {
+                  print('Selected Place: ${result.formattedAddress}');
+                }
+              },
+              child: Text("Pick a Place"),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+
+main.dart
+```
+import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
+class MyMaps extends StatefulWidget {
+  const MyMaps({super.key});
+
+  @override
+  State<MyMaps> createState() => _MyMapsState();
+}
+
+class _MyMapsState extends State<MyMaps> {
+  static final LatLng _kMapCenter =
+      LatLng(19.018255973653343, 72.84793849278007);
+  static final CameraPosition _kInitialPosition = CameraPosition(
+    target: _kMapCenter,
+    zoom: 11.0,
+  );
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Google Maps Demo'),
+      ),
+      body: GoogleMap(
+        initialCameraPosition: _kInitialPosition,
+        myLocationEnabled: true,
+      ),
+    );
+  }
+}
+```
+
 **Output**
+
+![image](https://github.com/user-attachments/assets/aa9a12c3-7ac5-4a37-8cc7-4a86325e40b3)
+
+---
 
 
 
